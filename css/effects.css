@@ -1,0 +1,35 @@
+/* ============================================================
+   effects.css – Effets graphiques / interactions au survol
+   ============================================================ */
+
+/* ---------- EFFET N°1 ---------- */
+/* Au survol d'une entrée (formation, stage, expérience) :
+   trait vertical gauche + fond légèrement coloré */
+.entry:hover {
+  border-left-color: var(--color-primary);
+  background-color: #05050538;
+}
+
+/* ---------- EFFET N°2 ---------- */
+/* Au survol de la photo de profil :
+   curseur zoom-in + légère mise à l'échelle */
+.photo-link {
+  display: inline-block;
+  cursor: zoom-in;
+}
+
+.photo-link:hover .profile-photo {
+  opacity: 0.9;
+  transform: scale(1.03);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.profile-photo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* ---------- EFFET N°3 ---------- */
+/* Au survol d'une icône réseau social : opacité réduite */
+.social-link:hover {
+  opacity: 0.6;
+}
