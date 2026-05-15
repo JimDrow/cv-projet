@@ -131,3 +131,108 @@ img {
   font-size: 0.85rem;
   color: var(--color-white);
 }
+
+/* ---------- CORPS (sidebar + main) ---------- */
+.cv-body {
+  display: flex;
+  align-items: stretch;
+}
+
+/* ---------- SIDEBAR ---------- */
+.cv-sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  background-color: var(--color-lighter);
+  padding: 1.5rem 1.25rem;
+  border-right: 1px solid var(--color-light-bg);
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-title {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- COMPÉTENCES ---------- */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.skill-name {
+  font-weight: 700;
+}
+
+.skill-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  background-color: var(--color-light-bg);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+}
+
+.star.filled {
+  background-color: var(--color-primary);
+}
+
+/* ---------- LANGUES ---------- */
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.language-name {
+  font-weight: 700;
+}
+
+.language-level {
+  color: #666;
+  font-style: italic;
+}
+
+/* ---------- QUALITÉS & CENTRES D'INTÉRÊT ---------- */
+.qualities-list li,
+.interests-list li {
+  font-size: 0.85rem;
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.8;
+}
+
+.qualities-list li::before,
+.interests-list li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
