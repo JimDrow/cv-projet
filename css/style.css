@@ -302,3 +302,37 @@ img {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+/* ---------- PIED DE PAGE ---------- */
+.cv-footer {
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-update {
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-style: italic;
+}
